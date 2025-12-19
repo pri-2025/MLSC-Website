@@ -6,8 +6,10 @@ export default function EventsSection() {
     <section className="min-h-screen px-8 md:px-16 lg:px-24 py-20 text-white">
 
       {/* PAGE TITLE */}
-      <h1 className="text-4xl font-bold">Events</h1>
-      <div className="w-16 h-1 bg-[#0078D4] mt-3 mb-12" />
+    <div className="flex flex-col items-center mb-12">
+  <h1 className="text-4xl font-bold">Events</h1>
+  <div className="w-16 h-1 bg-[#0078D4] mt-3 mx-auto" />
+</div>
 
       {/* SUBTITLE */}
       <h2 className="text-2xl font-semibold mb-8">

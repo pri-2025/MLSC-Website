@@ -1,7 +1,13 @@
-export default function EventCard({ event }) {
-  return (
-    <div className="flex flex-col md:flex-row gap-6 bg-[#243B55] rounded-xl p-6 hover:bg-[#2B4A6A] transition">
+import useScrollReveal from "../../hooks/useScrollReveal";
 
+export default function EventCard({ event }) {
+  const { ref, visible } = useScrollReveal();
+  return (
+      <div
+      ref={ref}
+      className={`flex flex-col md:flex-row gap-6 bg-[#243B55] rounded-xl p-6 transition
+      ${visible ? "animate-slide-up" : "opacity-0"}`}
+    >
       {/* IMAGE */}
       <div className="w-full md:w-[320px] h-[200px] overflow-hidden rounded-lg">
         <img
