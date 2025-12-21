@@ -45,9 +45,12 @@ export default function EventCard({ event }) {
         </p>
 
         {/* BUTTON */}
-        <button className="mt-6 px-6 py-2 rounded-lg bg-[#0078D4] hover:bg-[#50C8DC] transition font-semibold">
+        <div className="mt-4">
+        <a href="https://imaginecup.microsoft.com" target="_blank"
+              rel="noreferrer" className="mt-6 px-6 py-2 rounded-lg bg-[#0078D4] hover:bg-[#50C8DC] transition font-semibold">
           Register Now
-        </button>
+        </a>
+        </div>
       </div>
     </div>
   );
