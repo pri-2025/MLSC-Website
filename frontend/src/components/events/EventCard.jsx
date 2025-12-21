@@ -1,5 +1,5 @@
 import useScrollReveal from "../../hooks/useScrollReveal";
-
+import { Clock, MapPin } from "lucide-react";
 export default function EventCard({ event }) {
   const { ref, visible } = useScrollReveal();
   return (
@@ -34,9 +34,16 @@ export default function EventCard({ event }) {
         </h3>
 
         {/* META */}
-        <div className="flex flex-wrap gap-6 text-sm text-gray-300 mt-2">
-          <span>🕒 {event.time}</span>
-          <span>📍 {event.location}</span>
+       <div className="flex flex-wrap gap-6 text-sm text-gray-300 mt-2">
+          <span className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-[#50C8DC]" />
+            {event.time}
+          </span>
+
+          <span className="flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-[#50C8DC]" />
+            {event.location}
+          </span>
         </div>
 
         {/* DESCRIPTION */}

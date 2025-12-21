@@ -6,19 +6,35 @@ const slides = [
     id: 1,
     content: (
       <>
-        <h1 className="text-5xl md:text-6xl font-bold text-[#50C8DC] leading-tigh ">
-          Microsoft Learn Student
-          <br />
-          <span className="text-[#0078D4]">Club</span>
-        </h1>
+            <div className="text-center max-w-4xl mx-auto">
 
-        <p className="mt-6 text-lg text-gray-300 max-w-2xl">
-          Empowering students through technology, innovation, and collaboration
-        </p>
+                {/* College Badge */}
+                <p className="text-sm md:text-base text-[#50C8DC] tracking-wide mb-3">
+                    MKSSS's Cummins College of Engineering for Women, Pune
+                </p>
 
-        <button className="mt-10 px-8 py-3 rounded-lg bg-[#0078D4] hover:bg-[#50C8DC] transition font-semibold">
-          Explore Our Club
-        </button>
+                {/* Main Heading */}
+                <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r to-[#50C8DC] from-[#0078D4] ">Microsoft Learn Student Club</span>{" "}
+                
+                </h1>
+
+                {/* Chapter Identity */}
+                <p className="mt-3 text-lg text-gray-300">
+                    Official Microsoft Learn Student Chapter at CCEW
+                </p>
+
+                {/* Tagline */}
+                <p className="mt-6 text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
+                    Empowering students through technology, innovation, and collaboration
+                </p>
+
+                {/* CTA */}
+                <button className="mt-10 px-8 py-3 rounded-lg bg-[#0078D4] hover:bg-[#50C8DC] transition font-semibold">
+                    Explore Our Club
+                </button>
+        </div>
+
       </>
     ),
   },
