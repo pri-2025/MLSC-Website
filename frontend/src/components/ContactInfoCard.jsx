@@ -4,11 +4,10 @@ import useScrollReveal from "../hooks/useScrollReveal";
 export default function ContactInfoCard() {
   const { ref, visible } = useScrollReveal();
   return (
-    <div 
-      ref={ref} 
-      className={`bg-[#243A57] rounded-xl p-8 space-y-6 border border-[#50C8DC]/30 transition-all duration-700 ${
-        visible ? 'animate-slide-up' : 'opacity-0'
-      } animate-float-y`}
+    <div
+      ref={ref}
+      className={`bg-[#243A57]/50 rounded-xl p-8 space-y-6 border border-[#50C8DC]/30 transition-all duration-700 ${visible ? 'animate-slide-up' : 'opacity-0'
+        } animate-float-y`}
       style={{
         boxShadow: visible ? "inset 0 0 20px rgba(80, 200, 220, 0.1), 0 0 30px rgba(80, 200, 220, 0.2)" : "none"
       }}
@@ -35,8 +34,8 @@ export default function ContactInfoCard() {
         </div>
         <div>
           <p className="font-semibold text-white">Phone</p>
-          <p className="text-gray-300">Eesha Kamath: +91 8767121158 <br/>
-                                        Vaishnavi Ahire: +91 8530017432</p>
+          <p className="text-gray-300">Eesha Kamath: +91 8767121158 <br />
+            Vaishnavi Ahire: +91 8530017432</p>
         </div>
       </div>
 
@@ -53,7 +52,7 @@ export default function ContactInfoCard() {
           </p>
         </div>
       </div>
-     
+
     </div>
   );
 }
