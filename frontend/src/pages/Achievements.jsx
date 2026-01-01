@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useScrollReveal from "../hooks/useScrollReveal";
-import EventCard from "../components/events/EventCard";
 import { achievements } from "../data/achievements";
 import AchievementCard from "../components/AchievementCard";
 import AchievementDetails from "../components/AchievementDetails";
@@ -13,7 +12,7 @@ export default function Achievements() {
   return (
     <section className="px-8 md:px-16 py-20 text-white relative">
       {/* Heading */}
-     <div
+      <div
         ref={headingRef}
         className={`
           mb-16 inline-block relative
@@ -32,7 +31,7 @@ export default function Achievements() {
           Our Achievements
         </h1>
         {/* Underline */}
-        <div className="w-40 h-1 bg-gradient-to-r from-[#F25022] via-[#50C8DC] to-[#0078D4] rounded-full" 
+        <div className="w-40 h-1 bg-gradient-to-r from-[#F25022] via-[#50C8DC] to-[#0078D4] rounded-full"
           style={{ boxShadow: "0 0 15px rgba(242, 80, 34, 0.6)" }}
         />
       </div>
