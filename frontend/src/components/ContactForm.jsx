@@ -3,7 +3,7 @@ import useScrollReveal from "../hooks/useScrollReveal";
 export default function ContactForm() {
   const { ref, visible } = useScrollReveal();
   return (
-    <div ref={ref} className={`bg-[#243A57]/50 rounded-xl border border-[#50C8DC]/30 p-8 shadow-lg ${visible ? 'animate-slide-up' : 'opacity-0'} animate-float-x`}
+    <div ref={ref} className={`bg-[#243A57]/50 rounded-xl border border-[#50C8DC]/30 p-8 shadow-lg ${visible ? 'animate-slide-up' : 'opacity-0'} animate-float-y`}
       style={{
         boxShadow: visible ? "inset 0 0 20px rgba(80, 200, 220, 0.1), 0 0 30px rgba(80, 200, 220, 0.2)" : "none"
       }}
